@@ -10,14 +10,15 @@ python -m unittest discover -s tests -p "test_*.py"
 dotnet run --project CSharp -- self-test
 ```
 
+On Windows, `py -3.12` can be used instead of `python` if the Python launcher
+is installed but `python` is not on PATH.
+
 Run a specific JavaScript example with `node week-01\example.cjs` (substitute
 the desired week); run the Python examples with `python week-12\example.py`
 and similarly for weeks 13-14. The examples use synthetic data and no
 third-party packages. For the C# counterparts to weeks 1-6, run
 `dotnet run --project CSharp -- 1` (substitute a number from 1 through 6).
-The C# source and self-tests were verified with the .NET 10 runtime and Roslyn
-compiler; the `dotnet run` SDK workflow still needs verification on a machine
-with the .NET 10 SDK installed.
+The C# examples and self-tests were also verified using the .NET 10 SDK.
 
 | Week | Original example | Author material |
 |---|---|---|
