@@ -1,17 +1,23 @@
 # OOP Spring 2027 - weekly examples
 
 These are original course examples, not copies of the textbooks. Open this
-folder in VS Code. Install Node.js 26 and Python 3.12 or later, then run:
+folder in VS Code. Install Node.js 26, Python 3.12 or later, and the .NET 10
+SDK, then run:
 
 ```powershell
 node --test
 python -m unittest discover -s tests -p "test_*.py"
+dotnet run --project CSharp -- self-test
 ```
 
 Run a specific JavaScript example with `node week-01\example.cjs` (substitute
 the desired week); run the Python examples with `python week-12\example.py`
 and similarly for weeks 13-14. The examples use synthetic data and no
-third-party packages.
+third-party packages. For the C# counterparts to weeks 1-6, run
+`dotnet run --project CSharp -- 1` (substitute a number from 1 through 6).
+The C# source and self-tests were verified with the .NET 10 runtime and Roslyn
+compiler; the `dotnet run` SDK workflow still needs verification on a machine
+with the .NET 10 SDK installed.
 
 | Week | Original example | Author material |
 |---|---|---|
@@ -33,5 +39,5 @@ third-party packages.
 The linked textbook material remains in the authors' repositories. The
 data-science repository did not visibly state a license when reviewed, so its
 notebooks are linked rather than copied. Hillar's official public code
-repository has not been verified. This JavaScript/Python starter does not yet
-provide C# examples or certify the textbook notebooks' dependencies.
+repository has not been verified. The examples do not certify the textbook
+notebooks' dependencies.
