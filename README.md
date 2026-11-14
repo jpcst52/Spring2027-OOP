@@ -11,7 +11,14 @@ dotnet run --project CSharp -- self-test
 ```
 
 On Windows, `py -3.12` can be used instead of `python` if the Python launcher
-is installed but `python` is not on PATH.
+is installed but `python` is not on PATH. If a user-local .NET SDK is installed
+but `dotnet --list-sdks` does not show it, start a PowerShell session with:
+
+```powershell
+$env:DOTNET_ROOT = Join-Path $env:LOCALAPPDATA 'Microsoft\dotnet'
+$env:Path = "$env:DOTNET_ROOT;$env:Path"
+dotnet --list-sdks
+```
 
 Run a specific JavaScript example with `node week-01\example.cjs` (substitute
 the desired week); run the Python examples with `python week-12\example.py`
