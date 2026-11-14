@@ -20,6 +20,16 @@ $env:Path = "$env:DOTNET_ROOT;$env:Path"
 dotnet --list-sdks
 ```
 
+## Course preview
+
+The original weekly slides pair concepts with practice. This is the week 1
+worked example:
+
+![Week 1 worked example about modeling a service request](docs/screenshots/week-01-worked-example.png)
+
+[C# examples for weeks 1-6](CSharp/README.md) include a second slide preview
+and individual run instructions.
+
 Run a specific JavaScript example with `node week-01\example.cjs` (substitute
 the desired week); run the Python examples with `python week-12\example.py`
 and similarly for weeks 13-14. The examples use synthetic data and no
